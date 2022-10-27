@@ -207,7 +207,7 @@ python add_to_team_drive.py -d YourSharedDriveID
 
 🧠 [Smartass](https://github.com/smartass08) - [Here](https://github.com/smartass08/telegram_gcloner) - Added docker and Heroku support `heroku support removed as it's against tos`
 
-🧠 [TheCaduceus)])https://github.com/TheCaduceus) - [Here](https://github.com/TheCaduceus/CloneBot_V2/blob/main/README.md#%EF%B8%8F-create-service-accounts) - For the Image guide on how to create sa 
+🧠 [TheCaduceus](https://github.com/TheCaduceus) - [Here](https://github.com/TheCaduceus/CloneBot_V2/blob/main/README.md#%EF%B8%8F-create-service-accounts) - For the Image guide on how to create sa 
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE]([https://github.com/roshanconnor123/Fclone_Tg_Bot/blob/master/LICENSE](https://github.com/LotusCloud/Fclone-Bot/blob/main/LICENSE)) file for details
