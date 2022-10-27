@@ -7,13 +7,43 @@
 ## 📗 Pre-requisites:-
 1. [Install Python 3.7+](https://www.python.org/downloads/)（Latest version 3.8.3 recommended）
 2. You need Generated SAs (using [Easiest method](https://github.com/LotusCloud/Fclone-Bot/blob/master/README.md#-How-To-make-SA) or [Autorclone](https://github.com/xyou365/AutoRclone) or [Folderclone](https://github.com/Spazzlo/folderclone))
-3. Open **accounts** Folder (inside Autorclone or Folderclone Folder) and select any one of the json files and rename it as **1.json**
-4. Zip the accounts Folder and keep it safe
-5. Make a new bot from [Bot Father](https://core.telegram.org/bots#6-botfather) and get the **Bot token**
-6. Get your own Telegram ID - using this [bot](https://t.me/userinfobot)
+3. Not needed if you are using Easiest method Open **accounts** Folder (inside Autorclone or Folderclone Folder) and select any one of the json files and rename it as **1.json** 
+4. Zip the accounts Folder and keep it safe you upload it to bot later 
+5. Make a new bot from [BotFather](https://t.me/BotFather) and get the **Bot token** Ignore 👉[Bot Father Details](https://core.telegram.org/bots#6-botfather) 
+6. Get your own Telegram ID - using this [bot](https://t.me/userinfobot) or [rose bot](https://t.me/MissRose_bot) type /id for rose bot 
 
 ## 📙 Installation:-
-1. Download the Zip version of this repo or clone this repo using the command below
+
+## Method 1
+### Docker Deployment easiest
+
+1. Installing docker compose
+```bash
+sudo apt update -y ; sudo apt upgrade -y; sudo apt autoremove -y; sudo apt install docker-compose -y
+```
+2. Clone this repo using the command below or Download the Zip version of this repo and extract it
+```
+git clone https://github.com/LotusCloud/Fclone-Bot
+cd Fclone-Bot
+```
+3.Open config.ini (Its inside telegram_gcloner Folder) - Fill the appropriate values
+```
+[General]
+path_to_gclone =./fclone
+
+telegram_token = telegram bot token
+user_ids = Your Telegram ID (multiple separated by commas, first ID is admin get it from https://t.me/MissRose_bot type /id in rose bot to get id )
+group_ids = Your Telegram Group ID (If you are not adding the bot to any group - you can leave it blank)
+
+gclone_para_override = Leave it Blank
+```
+4. Starting the Bot 
+```docker
+sudo docker-compose up --build
+```
+## Method 2
+### Normal Deployment without docker 
+1. Download the Zip version of this repo and extract it or clone this repo using the command below
 ```
 git clone https://github.com/LotusCloud/Fclone-Bot
 ```
@@ -27,7 +57,7 @@ pip install -r requirements.txt
 path_to_gclone =./fclone
 
 telegram_token = telegram bot token
-user_ids = Your Telegram ID (multiple separated by commas, first ID is admin)
+user_ids = Your Telegram ID (multiple separated by commas, first ID is admin get it from https://t.me/MissRose_bot type /id in rose bot to get id )
 group_ids = Your Telegram Group ID (If you are not adding the bot to any group - you can leave it blank)
 
 gclone_para_override = Leave it Blank
@@ -59,10 +89,13 @@ gclone_para_override = Leave it Blank
 
 ### ENABLE Required API
 - Go to console.cloud.google.com/apis/library
+Click on the search bar find these 2 and enable them 
 
---- ENABLE `Google Drive API`
+👉ENABLE 
 
---- ENABLE `Identity and Access Management (IAM) API`
+`Google Drive API`
+
+`Identity and Access Management (IAM) API`
 
 ### Create Token.Pickle + Token_sa.Pickle + Service Accounts JSON Files from Windows CMD
 
