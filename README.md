@@ -80,6 +80,11 @@ gclone_para_override = Leave it Blank
 
 ## 📘 How To make SA 
 
+You can follow this guide which has images 👉 [Image Guide Easiest](https://github.com/TheCaduceus/CloneBot_V2/blob/main/README.md#-service-accounts)
+
+or 
+a little difficult one 👇 because it just has text.
+
 ### Create credentials.JSON in Google Cloud Console
 
 - Open console.developers.google.com/apis/credentials (see in Video how to create it)
@@ -170,9 +175,10 @@ grep -oPh '"client_email": "\K[^"]+' *.json > emails.txt
 
 - Copy all mails from \accounts\emails.txt and paste in 'Group members' field, then press 'Add Members'
 
-- open your SHARED DRIVE and add this google group (it will be something like `your@googlegroups.com`) as 'Content Manager'. Done!
+- open your SHARED DRIVE and add this  [Google Group](https://groups.google.com/my-groups) (it will be something like `your@googlegroups.com`) as 'Content Manager'. Done!
 
 - Don't forget delete emails.txt in your local drive
+
 
 #### Alternative
 
@@ -201,6 +207,9 @@ python add_to_team_drive.py -d YourSharedDriveID
 
 🧠 [Smartass](https://github.com/smartass08) - [Here](https://github.com/smartass08/telegram_gcloner) - Added docker and Heroku support `heroku support removed as it's against tos`
 
+🧠 [TheCaduceus)])https://github.com/TheCaduceus) - [Here](https://github.com/TheCaduceus/CloneBot_V2/blob/main/README.md#%EF%B8%8F-create-service-accounts) - For the Image guide on how to create sa 
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE]([https://github.com/roshanconnor123/Fclone_Tg_Bot/blob/master/LICENSE](https://github.com/LotusCloud/Fclone-Bot/blob/main/LICENSE)) file for details
+
+
